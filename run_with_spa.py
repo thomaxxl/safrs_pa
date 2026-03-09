@@ -19,6 +19,12 @@ if str(SRC_DIR) not in sys.path:
 from northwind_backend import create_fastapi_app
 from northwind_backend.config import get_settings
 
+DOCS_DESCRIPTION = """
+[Open the admin app](/admin-app/)
+
+This app serves the Northwind SAFRS FastAPI API and a React admin app.
+""".strip()
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -42,6 +48,8 @@ def create_app():
         )
 
     app = create_fastapi_app()
+    app.description = DOCS_DESCRIPTION
+    app.openapi_schema = None
 
     assets_dir = FRONTEND_DIST_DIR / "assets"
     if assets_dir.is_dir():
