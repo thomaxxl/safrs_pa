@@ -11,6 +11,20 @@ Unlike `projects/northwind`, this project does not include the editable frontend
 source tree or `node_modules`. It only ships the built frontend under
 `frontend/dist/`.
 
+## Deployment role
+
+This project backs the public site:
+
+- `https://safrs.pythonanywhere.com/`
+
+Operational workflow:
+
+- this directory is a standalone git repository
+- deployment is done by logging into the PythonAnywhere console and pulling
+  this repository
+- if a change should appear on the public site, make sure it is present here
+  and committed/pushed from this repo
+
 ## Run
 
 From `backend/`:
