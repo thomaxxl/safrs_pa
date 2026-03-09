@@ -20,7 +20,7 @@ from northwind_backend import create_fastapi_app
 from northwind_backend.config import get_settings
 
 DOCS_DESCRIPTION = """
-# [Admin App](/admin-app/)
+# JS frontend (API consumer): [Admin App](/admin-app/)
 
 This app serves the Northwind [SAFRS](https://github.com/thomaxxl/safrs) FastAPI API and a React admin app. ([source](https://github.com/thomaxxl/safrs_pa))
 """.strip()
