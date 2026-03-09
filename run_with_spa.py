@@ -22,9 +22,7 @@ from northwind_backend.config import get_settings
 DOCS_DESCRIPTION = """
 [Admin app](/admin-app/)
 
-This app serves the Northwind [SAFRS](https://github.com/thomaxxl/safrs) FastAPI API and a React admin app.  
-
-[app source](https://github.com/thomaxxl/safrs_pa)
+This app serves the Northwind [SAFRS](https://github.com/thomaxxl/safrs) FastAPI API and a React admin app. ([source](https://github.com/thomaxxl/safrs_pa))
 """.strip()
 
 
