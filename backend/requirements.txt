@@ -1,0 +1,8 @@
+git+https://github.com/thomaxxl/safrs.git
+Flask
+Flask-Cors
+fastapi
+gunicorn
+PyYAML
+SQLAlchemy
+uvicorn
